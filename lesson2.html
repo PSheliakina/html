@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
-    <head>
-        <meta charset="UTF-8">
-        <title>Урок 2</title>
-    </head>
-    <body>
-    <h2>Анкeта соискателя в НИИ</h2>
-    <form action="/handler.php" method="post">
-   <label for="name">Имя и Фамилия</label>
-        <input required type="text" id="name" name="name" placeholder="Иван Иванов">
-    <br /><label for="phone">Номер телефона</label>
-        <input required type="tel" id="phone" name="phone" placeholder="8913000000">
-    <br /><label for="email">Email</label>
-        <input required type="email" id="email" name="email" placeholder="example@example.com">
-    <br/>Укажите свой пол
-    <br /><input required type="radio" value="M" name="gender" id="gender1">Мужской
-    <input required type="radio" value="F" name="gender" id="gender2">Женский
-    <br /><label for="date of birth">Укажите дату рождения</label>
-        <input required type="date" id="date of birth" name="date of birth" value="data">
-    <br /><label for ="city">Укажите город проживания</label>
-        <select id="city" name="city">
-            <option value="Nsk">Новосибирск</option>
-            <option value="Berdsk">Бердск</option>
-            <option value="Iskitim">Искитим</option>
-            <option value="Koltsovo">Кольцово</option>
-            <option value="Ob">Обь</option>
-            <option value="Suzun">Сузун</option>
-        </select>
-    <br /><label for="about">Расскажите о себе</label>
-        <br /><textarea rows="12" cols="50" id="about" name="abuot"></textarea>
-    <br /><label for="vacansy">Укажите предпочитаемую должность</label>
-    <br /><select id="vacansy" name="vacansy" size="4" multiple>
-        <option value="Sns">Старший научный сотрудник</option>
-        <option value="Ns">Научный сотрудник</option>
-        <option value="Mns">Младший научный сотрудник</option>
-        <option value="Lab">Лаборант</option>
-        <option value="Eng">Инженер</option>
-        <option value="Tec">Техничка</option>
-        <option value="Buh">Бухгалтер</option>
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 2</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+</head>
+<body>
+<h2>Анкeта соискателя в НИИ</h2>
+<form action="/handler.php" method="post">
+    <label for="name"><b>Имя и Фамилия</b></label>
+    <br/>
+    <input required type="text" id="name" name="name" placeholder="Иван Иванов">
+    <br/>
+    <br/><label for="phone"><b>Номер телефона</b></label>
+    <input required type="tel" id="phone" name="phone" placeholder="8913000000">
+    <br/>
+    <br/><label for="email"><b>Email</b></label>
+    <br/><input required type="email" id="email" name="email" placeholder="example@example.com">
+    <br/>
+    <br/><b>Укажите свой пол</b>
+    <br/><label for="gender1">Мужской</label>
+    <input required type="radio" value="M" name="gender" id="gender1">
+    <br/><label for="gender2">Женский</label>
+    <input required type="radio" value="F" name="gender" id="gender2">
+    <br/>
+    <br/><label for="date of birth"><b>Укажите дату рождения</b></label>
+    <input required type="date" id="date of birth" name="date of birth" value="data">
+    <br/>
+    <br/><label for="city"><b>Укажите город проживания</b></label>
+    <select id="city" name="city">
+        <option value="Nsk">Новосибирск</option>
+        <option value="Berdsk">Бердск</option>
+        <option value="Iskitim">Искитим</option>
+        <option value="Koltsovo">Кольцово</option>
+        <option value="Ob">Обь</option>
+        <option value="Suzun">Сузун</option>
     </select>
-    <br />Предпочитаемый способ связи
-    <br /><input type="checkbox" name="how to connect" value="by phone">По телефону
-    <br /><input type="checkbox" name="how to connect" value="by email">По email
-    <br /><input type="checkbox" name="how to connect" value="no way">Никак
-    <p><button type="submit">Отправить заявку</button> </p>
-    </form>
-    </body>
+    <br/>
+    <br/><label for="about"><b>Расскажите о себе</b></label>
+    <br/><textarea rows="12" cols="50" id="about" name="abuot"></textarea>
+    <br/>
+    <br/><label for="vacansy"><b>Укажите предпочитаемую должность</b></label>
+    <br/><select id="vacansy" name="vacansy" size="4" multiple>
+    <option value="Sns">Старший научный сотрудник</option>
+    <option value="Ns">Научный сотрудник</option>
+    <option value="Mns">Младший научный сотрудник</option>
+    <option value="Lab">Лаборант</option>
+    <option value="Eng">Инженер</option>
+    <option value="Tec">Техничка</option>
+    <option value="Buh">Бухгалтер</option>
+</select>
+    <br/>
+    <br/><b>Предпочитаемый способ связи</b>
+    <br><label for="how to connect1">По телефону</label>
+    <input type="checkbox" id="how to connect1" value="by phone">
+    <br><label for="how to connect2">По email</label>
+    <input type="checkbox" id="how to connect2" value="by email">
+    <br><label for="how to connect3">Никак</label>
+    <input type="checkbox" id="how to connect3" value="no way">
+    <p>
+        <button type="submit">Отправить заявку</button>
+    </p>
+</form>
+</body>
 </html>
